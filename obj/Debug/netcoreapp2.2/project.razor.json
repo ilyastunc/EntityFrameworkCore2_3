@@ -1914,6 +1914,21 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/tunc/Documents/C#/EntityFrameworkCore2_3/Views/Product/Details.cshtml",
+      "TargetPath": "Views\\Product\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/tunc/Documents/C#/EntityFrameworkCore2_3/Views/Product/Delete.cshtml",
+      "TargetPath": "Views\\Product\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/tunc/Documents/C#/EntityFrameworkCore2_3/Views/Product/Create.cshtml",
+      "TargetPath": "Views\\Product\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/tunc/Documents/C#/EntityFrameworkCore2_3/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

@@ -14,5 +14,25 @@ namespace EntityFrameworkCore2_3.Models
             new Product() {ProductId=3, Name="Samsung S7", Price=4000, Category="Telefon"},
             new Product() {ProductId=4, Name="Samsung S8", Price=5000, Category="Telefon"}
         }.AsQueryable();
+
+        public void CreateProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteProduct(int productId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Product GetProductById(int productId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

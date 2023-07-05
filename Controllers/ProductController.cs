@@ -21,6 +21,47 @@ namespace EntityFrameworkCore2_3.Controllers
             return View();
         }
 
-        public IActionResult List() => View(repository.Products);
+        public IActionResult List() 
+        {
+            // var products = repository.Products
+            // .Where(i=>i.Category=="Category 1")
+            // .FirstOrDefault(i=>i.Price>50); //Category'si 1 olan kayıtlar arasından fiyatı 50'den büyük olan ilk kaydı getir. 
+
+            return View(repository.Products);
+        } 
+
+        [HttpGet]
+        public IActionResult Create() => View();
+
+        [HttpPost]
+        public IActionResult Create(Product product)
+        {
+            repository.CreateProduct(product);
+            return RedirectToAction("List");
+        }
+
+        public IActionResult Details(int id)
+        {
+            return View(repository.GetProductById(id));
+        }
+
+        [HttpPost]
+        public IActionResult Details(Product product)
+        {
+            repository.UpdateProduct(product);
+            return RedirectToAction("List");
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            return View(repository.GetProductById(id));
+        }
+        [HttpPost]
+        public IActionResult Delete(Product product)
+        {
+            repository.DeleteProduct(product.ProductId);
+            return RedirectToAction("List");
+        }
     }
 }
